@@ -51,6 +51,7 @@ body {
   width: 100%;
   height: 648px;
   position: absolute;
+  z-index: -1;
 }
 
 .heading-text {
@@ -105,4 +106,26 @@ body {
 
 .social-icons > li {
   margin-right: 16px;
+}
+
+.action-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: solid 1px red;
+  height: 48px;
+  margin: 0px 24px;
+  margin-top: 34px;
+}
+
+.action-btn > a > img {
+  height: 40px;
+  width: 40px;
+  margin-top: 4px;
+}
+
+main {
+  display: flex;
+  border: solid 1px red;
+  height: 3238px;
 }
