@@ -267,3 +267,161 @@ main {
 .project-btn-sec > button:active {
   background: #008552;
 }
+
+.about-me-illustration {
+  top: 0px;
+  position: absolute;
+  width: -webkit-fill-available;
+}
+
+.img-1 {
+  margin-top: -62px;
+  float: right;
+  width: 68px;
+  height: 127px;
+}
+
+.img-2 {
+  margin-top: 279px;
+  float: left;
+  width: 72.52px;
+  height: 55.87px;
+}
+
+.about-me {
+  position: absolute;
+  height: 1625px;
+  width: -webkit-fill-available;
+  top: 3927px;
+}
+
+.about-me-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  height: 333px;
+}
+
+.about-me-text > h1 {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #172B4D;
+  margin: 0px;
+}
+
+.about-me-text > p {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  color: #42526E;
+}
+
+.about-me-text > button {
+  background: #36B37F;
+  border-radius: 4px;
+  width: 159px;
+  height: 48px;
+  border: none;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.about-me-text > button:active {
+  background: #008552;
+}
+
+.about-me-card {
+  width: 327px;
+  height: 1106px;
+  display: grid;
+  gap: 24px;
+  justify-content: center;
+  margin-left: 13px;
+  margin-top: 48px;
+}
+
+.languages, .frameworks, .skills {
+  height: 352px;
+  width: 327px;
+  background: #EBF0EE;
+  border: 1px solid #C1C7D0;
+  border-radius: 8px;
+}
+
+.icon {
+  display: flex;
+  width: 327px;
+  height: 128px;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.icon > img {
+  margin-top: 16px;
+  position: absolute;
+}
+
+.about-title-tag {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  position: absolute;
+  width: 327px;
+  height: 144px;
+  margin-top: 40px;
+}
+
+.about-title-tag > h4{
+  font-family: 'Inter',sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #344563;
+  margin: 0px;
+}
+
+.about-title-tag > ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+  width: 271px;
+  height: 88px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.about-title-tag > ul > li {
+  background: #FFFFFF;
+  border-radius: 8px;
+  list-style: none;
+  padding: 12px;
+}
+
+.about-title-tag > ul > li > p {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #36B37E;
+  margin: 0px;
+}
+
