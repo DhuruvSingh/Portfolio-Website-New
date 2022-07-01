@@ -155,7 +155,7 @@ main {
   align-items: center;
 }
 
-.text > h1 {
+.text > h2 {
   color: #172b4d;
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -333,7 +333,7 @@ main {
   top: 3927px;
 }
 
-.about-me-text > h1 {
+.about-me-text > h3 {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -348,7 +348,7 @@ main {
 }
 
 .about-me-card {
-  width: 327px;
+  width: 98%;
   height: 1106px;
   display: grid;
   gap: 24px;
