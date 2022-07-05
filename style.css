@@ -434,7 +434,7 @@ main {
 
 #contact-form {
   border: red solid 1px;
-  height: 879px;
+  height: 780px;
   display: block;
   margin-top: 1589px;
 }
@@ -540,14 +540,12 @@ main {
   background: #008552;
 }
 
-
 .footer-social-icons {
   list-style: none;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: 0 24px;
-  margin-top: 58px;
+  margin: 0px;
   padding: 0;
 }
 
@@ -557,6 +555,7 @@ main {
 
 footer {
   display: flex;
+  flex-direction: column;
 }
 
 footer a {
