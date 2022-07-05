@@ -536,6 +536,9 @@ main {
   padding: 15px 16px;
 }
 
+#contact-form form button:active {
+  background: #008552;
+}
 
 
 .footer-social-icons {
