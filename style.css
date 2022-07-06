@@ -534,6 +534,7 @@ main {
 footer {
   display: flex;
   flex-direction: column;
+  margin-bottom: 300px;
 }
 
 footer a {
@@ -545,4 +546,14 @@ footer a {
   text-align: center;
   color: #42526e;
   text-decoration: none;
+}
+
+aside {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+aside img {
+  margin-top: -75px;
 }
