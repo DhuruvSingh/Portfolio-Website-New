@@ -77,6 +77,10 @@ aside img {
   margin-top: -75px;
 }
 
+footer div img {
+  display: none;
+}
+
 .illustration-mobile > img {
   width: 100%;
   height: 648px;
