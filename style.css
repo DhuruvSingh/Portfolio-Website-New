@@ -5,6 +5,29 @@ body {
   font-family: "Poppins", sans-serif, "Crete Round", 'Inter';
 }
 
+body::-webkit-scrollbar-thumb:active {
+  background-color: #008552;
+}
+
+body::-webkit-scrollbar:hover{
+  width: 15px;
+}
+
+body::-webkit-scrollbar {
+  width: 8px; /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: #172b4d; /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #36b37e; /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+}
+
+
+
 .navigation {
   height: 48px;
   width: 100%;
@@ -335,7 +358,7 @@ main {
   height: 55.87px;
 }
 
-.about-me {
+#about-me {
   position: absolute;
   height: 1625px;
   width: 100%;
@@ -556,4 +579,58 @@ aside {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+}
+
+.desktop-version-illustration {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .desktop-version-illustration {
+    display: block;
+  }
+
+  .mobile-version-illustration {
+    display: none;
+  }
+
+  .navigation {
+    background-color: unset;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .headline-section {
+    padding-top: 0px;
+  }
+
+  .logo, .menu {
+    display: none;
+  }
+
+  .desktop-menu {
+    display: flex;
+    height: 40px;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .desktop-menu li {
+    list-style: none;
+    height: 40px;
+    width: 87px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .desktop-menu li a {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    color: #344563;
+    text-decoration: none;
+  }
 }
