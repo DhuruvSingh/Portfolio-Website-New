@@ -5,6 +5,27 @@ body {
   font-family: "Poppins", sans-serif, "Crete Round", 'Inter';
 }
 
+body::-webkit-scrollbar {
+  width: 8px; /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: #172b4d; /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #36b37e; /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+}
+
+body::-webkit-scrollbar-thumb:active {
+  background-color: #008552;
+}
+
+body::-webkit-scrollbar:hover {
+  width: 15px;
+}
+
 .navigation {
   height: 48px;
   width: 100%;
@@ -54,6 +75,10 @@ body {
 
 aside img {
   margin-top: -75px;
+}
+
+footer div img {
+  display: none;
 }
 
 .illustration-mobile > img {
@@ -335,7 +360,7 @@ main {
   height: 55.87px;
 }
 
-.about-me {
+#about-me {
   position: absolute;
   height: 1625px;
   width: 100%;
@@ -556,4 +581,284 @@ aside {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+}
+
+.desktop-version-illustration {
+  display: none;
+}
+
+.desktop-menu {
+  display: none;
+}
+
+.dt-img-1,
+.dt-img-2 {
+  display: none;
+}
+
+.contact-illustrayion-1,
+.contact-illustrayion-2,
+.contact-illustrayion-3 {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .desktop-version-illustration {
+    display: block;
+  }
+
+  .mobile-version-illustration {
+    display: none;
+  }
+
+  .navigation {
+    position: absolute;
+    background-color: unset;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .headline-section {
+    padding-top: 0;
+  }
+
+  .logo,
+  .menu {
+    display: none;
+  }
+
+  .desktop-menu {
+    display: flex;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .desktop-menu li {
+    list-style: none;
+    height: 40px;
+    width: 87px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+
+  footer > a {
+    display: none;
+  }
+
+  .desktop-menu li a {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    color: #344563;
+    text-decoration: none;
+  }
+
+  .heading-text > h1 {
+    margin-top: 80px;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .supporting-text {
+    height: 90px;
+    margin: 0;
+    padding: 12px 142px;
+  }
+
+  .social-icons {
+    margin-top: 32px;
+  }
+
+  .work-container {
+    grid-template-columns: auto auto;
+  }
+
+  main {
+    height: 1711px;
+  }
+
+  #about-me {
+    top: 2506px;
+    height: 1096px;
+  }
+
+  .about-me-text p {
+    padding: 0 60px;
+  }
+
+  .img-1,
+  .img-2 {
+    display: none;
+  }
+
+  .dt-img-1 {
+    display: block;
+    margin-top: -62px;
+    float: right;
+    width: 131px;
+    height: 134px;
+  }
+
+  .dt-img-2 {
+    display: block;
+    margin-top: 148px;
+    float: left;
+    width: 138px;
+    height: 109px;
+  }
+
+  .about-me-card {
+    margin-top: 0;
+    width: unset;
+    grid-template-columns: auto auto;
+    height: 760px;
+  }
+
+  #contact-form {
+    margin-top: 1360px;
+  }
+
+  #contact-form h3 {
+    height: 160px;
+  }
+
+  footer {
+    margin-bottom: 0;
+  }
+
+  aside {
+    display: block;
+  }
+
+  aside img {
+    display: none;
+  }
+
+  .contact-illustrayion-1 {
+    display: block;
+    width: 236px;
+    height: 261.09px;
+  }
+
+  .contact-illustrayion-2 {
+    left: 224px;
+    top: 4325px;
+    display: block;
+    position: absolute;
+    width: 130.28px;
+    height: 105.85px;
+  }
+
+  .contact-illustrayion-3 {
+    display: block;
+    width: 162px;
+    height: 254px;
+    position: absolute;
+    top: 4244px;
+    right: 0;
+  }
+
+  footer div img {
+    width: 100%;
+    position: absolute;
+    height: 1px;
+    background: #dfe1e6;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .work-container {
+    grid-template-columns: auto auto auto;
+  }
+
+  .supporting-text {
+    padding: 12px 222px;
+  }
+
+  main {
+    height: 1200px;
+  }
+
+  #about-me {
+    top: 2000px;
+    height: 290px;
+  }
+
+  .about-me-text p {
+    padding: 0 320px;
+  }
+
+  .about-me-text {
+    height: 290px;
+  }
+
+  .dt-img-1 {
+    width: 212px;
+    height: 245px;
+    margin-top: -120px;
+  }
+
+  .dt-img-2 {
+    width: 220px;
+    height: 129.24px;
+    margin-top: 78px;
+  }
+
+  .about-me-card {
+    grid-template-columns: auto auto auto;
+    height: 370px;
+  }
+
+  #contact-form {
+    height: 400px;
+    display: flex;
+    margin-top: 960px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #contact-form h3 {
+    width: 463px;
+    height: 256px;
+    font-size: 30px;
+  }
+
+  #contact-form form {
+    width: 684px;
+    height: 330px;
+  }
+
+  .contact-illustrayion-1 {
+    position: absolute;
+    top: 3184px;
+    width: 167px;
+  }
+
+  .contact-illustrayion-2 {
+    left: 268px;
+    top: 3273px;
+    width: 72px;
+    height: 67.18px;
+  }
+
+  .contact-illustrayion-3 {
+    top: 3032px;
+    width: 180px;
+    height: 450.96px;
+  }
+
+  .footer-social-icons {
+    margin-top: 26px;
+  }
+
+  footer {
+    height: 71px;
+    margin-top: 200px;
+  }
 }
