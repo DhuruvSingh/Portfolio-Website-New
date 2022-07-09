@@ -6,16 +6,24 @@ body {
 }
 
 body::-webkit-scrollbar {
-  width: 8px; /* width of the entire scrollbar */
+  width: 8px;
+
+  /* width of the entire scrollbar */
 }
 
 body::-webkit-scrollbar-track {
-  background: #172b4d; /* color of the tracking area */
+  background: #172b4d;
+
+  /* color of the tracking area */
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #36b37e; /* color of the scroll thumb */
-  border-radius: 20px; /* roundness of the scroll thumb */
+  background-color: #36b37e;
+
+  /* color of the scroll thumb */
+  border-radius: 20px;
+
+  /* roundness of the scroll thumb */
 }
 
 body::-webkit-scrollbar-thumb:active {
@@ -671,7 +679,7 @@ aside {
   }
 
   .social-icons {
-    margin-top: 32px;
+    margin-top: 24px;
   }
 
   .work-container {
@@ -689,6 +697,21 @@ aside {
 
   .about-me-text p {
     padding: 0 60px;
+  }
+
+  aside img {
+    display: none;
+  }
+
+  footer div img {
+    width: 100%;
+    position: absolute;
+    height: 1px;
+    background: #dfe1e6;
+  }
+
+  .text img {
+    display: none;
   }
 
   .img-1,
@@ -735,10 +758,6 @@ aside {
     display: block;
   }
 
-  aside img {
-    display: none;
-  }
-
   .contact-illustrayion-1 {
     display: block;
     width: 236px;
@@ -763,11 +782,26 @@ aside {
     right: 0;
   }
 
-  footer div img {
-    width: 100%;
-    position: absolute;
-    height: 1px;
-    background: #dfe1e6;
+  .project-btn-sec > button,
+  .about-me-text > button,
+  #contact-form form button {
+    transition: all 0.5s ease-out;
+  }
+
+  .card-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .languages:hover,
+  .frameworks:hover,
+  .skills:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  #contact-form h3:hover {
+    transform: translate(-1.1rem, -1ex);
   }
 }
 
