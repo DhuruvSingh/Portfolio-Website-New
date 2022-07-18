@@ -684,8 +684,13 @@ hr {
   transform: translateY(0);
 }
 
+.menu li {
+  padding-bottom: 50px;
+}
 
-
+.menu li a:hover {
+  color: #36b37e;
+}
 
 @media only screen and (min-width: 768px) {
   .desktop-version-illustration {
