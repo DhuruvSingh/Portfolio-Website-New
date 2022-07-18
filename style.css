@@ -610,6 +610,83 @@ aside {
   display: none;
 }
 
+.nav-icon {
+  display: none;
+}
+
+.navabar {
+  display: block;
+  margin-right: 20px;
+}
+
+.hamburger {
+  display: block;
+  position: fixed;
+  z-index: 100;
+  top: 5px;
+  right: 1rem;
+  padding: 4px;
+  border: #ffffff solid 1px;
+  background: #ffffff;
+  cursor: pointer;
+  color: black;
+}
+
+.closeIcon {
+  display: none;
+}
+
+.menu {
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  transform: translateY(-100%);
+  transition: transform 0.2s;
+  width: 100%;
+  height: 100%;
+  top: -18px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  background: #ffffff;
+  color: white;
+  list-style: none;
+  overflow-x: hidden;
+  justify-content: center;
+  margin-left: 0px;
+  padding-left: 0px;
+  padding-top: 0px;
+  align-items: center;
+}
+
+.menuItem {
+  font-family: "Chivo", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  text-decoration: none;
+  color: #172b4d;
+}
+
+hr {
+  display: block;
+  width: 90%;
+  height: 1px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #6f6c6b;
+}
+
+.showMenu {
+  transform: translateY(0);
+}
+
+
+
+
 @media only screen and (min-width: 768px) {
   .desktop-version-illustration {
     display: block;
