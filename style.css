@@ -5,8 +5,12 @@ body {
   font-family: "Poppins", sans-serif, "Crete Round", 'Inter';
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body::-webkit-scrollbar {
-  width: 8px;
+  width: 16px;
 
   /* width of the entire scrollbar */
 }
@@ -31,7 +35,7 @@ body::-webkit-scrollbar-thumb:active {
 }
 
 body::-webkit-scrollbar:hover {
-  width: 15px;
+  width: 20px;
 }
 
 .navigation {
@@ -63,14 +67,6 @@ body::-webkit-scrollbar:hover {
   font-size: 20px;
   line-height: 28px;
   margin-left: 12px;
-}
-
-.menu {
-  background-image: url(./icons/Union.png);
-  width: 18px;
-  height: 12px;
-  margin: 18px 12px;
-  margin-right: 24px;
 }
 
 .headline-section {
@@ -454,6 +450,10 @@ main {
   margin-right: 16px;
 }
 
+.menu li {
+  padding-bottom: 40px;
+}
+
 .about-title-tag > ul > li {
   background: #fff;
   border-radius: 8px;
@@ -610,7 +610,90 @@ aside {
   display: none;
 }
 
+.nav-icon {
+  display: none;
+}
+
+.navabar {
+  display: block;
+  margin-right: 20px;
+}
+
+.hamburger {
+  display: block;
+  position: fixed;
+  z-index: 100;
+  top: 5px;
+  right: 1rem;
+  padding: 4px;
+  border: #fff solid 1px;
+  background: #fff;
+  cursor: pointer;
+  color: black;
+}
+
+.closeIcon {
+  display: none;
+}
+
+.menu {
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  transform: translateY(-100%);
+  transition: transform 0.2s;
+  width: 100%;
+  height: 100%;
+  top: -18px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  background: #fff;
+  color: white;
+  list-style: none;
+  overflow-x: hidden;
+  margin-left: 0;
+  padding-left: 28px;
+  padding-top: 60px;
+}
+
+.menuItem {
+  font-family: "Chivo", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  text-decoration: none;
+  color: #3a4a42;
+}
+
+.showMenu {
+  transform: translateY(0);
+}
+
+.menu li a:hover {
+  color: #36b37e;
+}
+
 @media only screen and (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+
+  .desktop-menu {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 40px;
+    flex-direction: row;
+    top: 40px;
+    justify-content: center;
+    background: none;
+    z-index: 100;
+    overflow: hidden;
+  }
+
   .desktop-version-illustration {
     display: block;
   }
@@ -630,16 +713,8 @@ aside {
     padding-top: 0;
   }
 
-  .logo,
-  .menu {
+  .logo {
     display: none;
-  }
-
-  .desktop-menu {
-    display: flex;
-    height: 40px;
-    margin: 0;
-    padding: 0;
   }
 
   .desktop-menu li {

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="style.css">
     <title>Personal Portfolio Website</title>
 </head>
@@ -17,13 +18,17 @@
             <div class="logo">
                 <h3>Dhuruv</h3>
             </div>
-            <div class="menu">
-            </div>
-            <ul class="desktop-menu">
-                <li><a href="#main-sec">Portfolio</a></li>
-                <li><a href="#about-me">About</a></li>
-                <lI><a href="#contact-form">Contact</a></lI>
+            <!-- <div class="menu">
+            </div> -->
+            <ul class="menu nav-icon desktop-menu">
+                <li><a class="menuItem nav-menu" href="#main-sec">Portfolio</a></li>
+                <li><a class="menuItem nav-menu" href="#about-me">About</a></li>
+                <lI><a class="menuItem nav-menu" href="#contact-form">Contact</a></lI>
             </ul>
+            <button class="hamburger">
+                <i class="menuIcon material-icons">menu</i>
+                <i class="closeIcon material-icons">close</i>
+            </button>
         </nav>
     </header>
 
@@ -360,6 +365,7 @@
         </ul>
         <a href="mailto:dhuruvs096@gmail.com">dhuruvs096@gmail.com</a>
     </footer>
+    <script src="./script.js"></script>
 
 </body>
 
