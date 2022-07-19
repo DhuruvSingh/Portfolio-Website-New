@@ -65,14 +65,6 @@ body::-webkit-scrollbar:hover {
   margin-left: 12px;
 }
 
-.menu {
-  background-image: url(./icons/Union.png);
-  width: 18px;
-  height: 12px;
-  margin: 18px 12px;
-  margin-right: 24px;
-}
-
 .headline-section {
   height: 651px;
   display: flex;
@@ -454,6 +446,10 @@ main {
   margin-right: 16px;
 }
 
+.menu li {
+  padding-bottom: 40px;
+}
+
 .about-title-tag > ul > li {
   background: #fff;
   border-radius: 8px;
@@ -626,8 +622,8 @@ aside {
   top: 5px;
   right: 1rem;
   padding: 4px;
-  border: #ffffff solid 1px;
-  background: #ffffff;
+  border: #fff solid 1px;
+  background: #fff;
   cursor: pointer;
   color: black;
 }
@@ -649,15 +645,13 @@ aside {
   right: 0;
   bottom: 0;
   z-index: 99;
-  background: #ffffff;
+  background: #fff;
   color: white;
   list-style: none;
   overflow-x: hidden;
-  justify-content: center;
-  margin-left: 0px;
-  padding-left: 0px;
-  padding-top: 0px;
-  align-items: center;
+  margin-left: 0;
+  padding-left: 28px;
+  padding-top: 60px;
 }
 
 .menuItem {
@@ -667,25 +661,11 @@ aside {
   font-size: 32px;
   line-height: 44px;
   text-decoration: none;
-  color: #172b4d;
-}
-
-hr {
-  display: block;
-  width: 90%;
-  height: 1px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: #6f6c6b;
+  color: #3a4a42;
 }
 
 .showMenu {
   transform: translateY(0);
-}
-
-.menu li {
-  padding-bottom: 50px;
 }
 
 .menu li a:hover {
@@ -693,6 +673,22 @@ hr {
 }
 
 @media only screen and (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+
+  .desktop-menu {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 40px;
+    flex-direction: row;
+    top: 40px;
+    justify-content: center;
+    background: none;
+    z-index: 100;
+  }
+
   .desktop-version-illustration {
     display: block;
   }
@@ -712,16 +708,8 @@ hr {
     padding-top: 0;
   }
 
-  .logo,
-  .menu {
+  .logo {
     display: none;
-  }
-
-  .desktop-menu {
-    display: flex;
-    height: 40px;
-    margin: 0;
-    padding: 0;
   }
 
   .desktop-menu li {
