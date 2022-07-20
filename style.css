@@ -832,9 +832,11 @@ aside {
 
 
 @media only screen and (min-width: 768px) {
-
+  .modal {
+      max-height: 80%;
+      max-width: 80%;
+    }
   
-
   .hamburger {
     display: none;
   }
