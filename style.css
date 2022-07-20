@@ -574,6 +574,12 @@ main {
   width: 100%;
 }
 
+.modal-hdr-btn div {
+  display: block;
+  position: absolute;
+  top: 760px;
+}
+
 #contact-form form button {
   display: flex;
   flex-direction: column;
