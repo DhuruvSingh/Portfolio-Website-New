@@ -13,12 +13,6 @@ body::-webkit-scrollbar {
   width: 16px;
 }
 
-.modal::-webkit-scrollbar {
-  width: 16px;
-
-  /* width of the entire scrollbar */
-}
-
 body::-webkit-scrollbar-track {
   background: #172b4d;
 
@@ -28,15 +22,6 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   background-color: #36b37e;
   border-radius: 20px;
-}
-
-.modal::-webkit-scrollbar-thumb {
-  background-color: #36b37e;
-
-  /* color of the scroll thumb */
-  border-radius: 20px;
-
-  /* roundness of the scroll thumb */
 }
 
 .navigation {
@@ -574,12 +559,6 @@ main {
   width: 100%;
 }
 
-.modal-hdr-btn div {
-  display: block;
-  position: absolute;
-  top: 760px;
-}
-
 #contact-form form button {
   display: flex;
   flex-direction: column;
@@ -755,6 +734,15 @@ aside {
   max-width: 90%;
   overflow-y: scroll;
   width: fit-content;
+}
+
+.modal::-webkit-scrollbar {
+  width: 16px;
+}
+
+.modal::-webkit-scrollbar-thumb {
+  background-color: #36b37e;
+  border-radius: 20px;
 }
 
 .modal.active {
