@@ -87,16 +87,17 @@
             </div>
         </div>
     </section>
+    
     <main id="main-sec">
         <div class="text">
             <h2>My Recent Works</h2>
             <img src="./icons/Indicator.png" alt="Indicator">
         </div>
         <section class="work-container">
-            <div class="card-item">
+            <div class="card-item card-item-1">
                 <div class="text-box">
                     <h4 class="project-title">Multi-Post Stories Gain+Glory</h4>
-                    <ul class="project-tag">
+                    <ul class="project-tag" id="project-tag">
                         <li>
                             <p>Ruby on rails</p>
                         </li>
@@ -111,24 +112,24 @@
                         </li>
                     </ul>
                     <div class="project-btn-sec">
-                        <button data-modal-target="#modal" type="button">See Project</button>
+                        <button class="project-1"  data-modal-target="#modal" type="button">See Project</button>
                     </div>
                 </div>
                 <div class="modal" id="modal">
                     <div class="modal-header">
-                        <img src="./icons/portfolio-snapshot-desktop.png" class="project-image-desktop">
+                        <img src="./icons/portfolio-snapshot-desktop.png" class="project-image-desktop" id="project-image-desktop">
                         <button data-close-button class="close-button">&times;</button>
                     </div>
                     <div class="modal-body">
                         <div class="modal-hdr-btn">
-                            <h4 class="modal-title">Keeping track of hundreds of
+                            <h4 class="modal-title" id="modal-title">Keeping track of hundreds of
                                 components</h4>
-                            <div>
+                            <div id="modal-btns">
                                 <button type="submit">See Live <i class="fa-solid fa-up-right-from-square"></i></button>
                                 <button type="submit">See Source <i class="fa-brands fa-github"></i></button>
                             </div>
                         </div>
-                        <ul class="modal-tag">
+                        <ul class="modal-tag" id="modal-tag">
                             <li>
                                 <p>Codekit</p>
                             </li>
@@ -148,13 +149,7 @@
                                <p>Codepen</p> 
                             </li>
                         </ul>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-                            galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the
-                            printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
-                            ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s
-                            with the relea
-                        </p>
+                        <p id="modal-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea</p>
                     </div>
                 </div>
                 <div id="overlay"></div>
@@ -177,7 +172,7 @@
                         </li>
                     </ul>
                     <div class="project-btn-sec">
-                        <button type="button">See Project</button>
+                        <button class="project-2" data-modal-target="#modal" type="button">See Project</button>
                     </div>
                 </div>
             </div>
@@ -199,7 +194,7 @@
                         </li>
                     </ul>
                     <div class="project-btn-sec">
-                        <button type="button">See Project</button>
+                        <button class="project-3" data-modal-target="#modal" type="button">See Project</button>
                     </div>
                 </div>
             </div>
@@ -221,7 +216,7 @@
                         </li>
                     </ul>
                     <div class="project-btn-sec">
-                        <button type="button">See Project</button>
+                        <button class="project-4" data-modal-target="#modal" type="button">See Project</button>
                     </div>
                 </div>
             </div>
@@ -243,7 +238,7 @@
                         </li>
                     </ul>
                     <div class="project-btn-sec">
-                        <button type="button">See Project</button>
+                        <button class="project-5" data-modal-target="#modal" type="button">See Project</button>
                     </div>
                 </div>
             </div>
@@ -265,7 +260,7 @@
                         </li>
                     </ul>
                     <div class="project-btn-sec">
-                        <button type="button">See Project</button>
+                        <button class="project-6" data-modal-target="#modal" type="button">See Project</button>
                     </div>
                 </div>
             </div>
@@ -364,6 +359,7 @@
             </div>
         </section>
     </main>
+
     <section id="contact-form">
         <h3>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h3>
         <form action="https://formspree.io/f/xeqnpraa" method="post">
@@ -373,6 +369,7 @@
             <button type="submit">Get in touch</button>
         </form>
     </section>
+
     <aside>
         <!-- mobile version -->
         <img src="./icons/illustration-contact-form.png" alt="illustration-contact-form">
@@ -382,6 +379,7 @@
             alt="">
         <img class="contact-illustrayion-3" src="./desktop-version-files/Frame-3.png" alt="">
     </aside>
+
     <footer>
         <div><img src="./desktop-version-files/Rectangle-42.png" alt=""></div>
         <ul class="footer-social-icons">
