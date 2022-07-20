@@ -691,9 +691,10 @@ aside {
   border-radius: 8px;
   z-index: 101;
   background-color: white;
-  max-height: 80%;
-  max-width: 80%;
+  max-height: 96%;
+  max-width: 90%;
   overflow-y: scroll;
+  width: fit-content;
 }
 
 .modal.active {
@@ -722,12 +723,14 @@ aside {
   width: 26px;
   border: none;
   border-radius: 8px;
-  background: #EBECF0;
+  background: none;
   font-size: 1.25rem;
   font-weight: bold;
   margin-bottom: 10px;
   color: #67798E;
-  align-self: flex-end;
+  position: absolute;
+  top: 15px;
+  right: 15px;
 }
 
 .modal-body {
@@ -769,12 +772,13 @@ aside {
 
 .modal-hdr-btn div {
   display: flex;
-  align-items: flex-start;
+  position: absolute;
+  bottom: 10px;
 }
 
 .modal-hdr-btn div button {
   margin-left: 12px;
-  width: 115px;
+  width: 141px;
   height: 48px;
   background: #36B37E;
   border-radius: 8px;
@@ -803,7 +807,9 @@ aside {
   padding: 0px;
   margin: 0px;
   list-style: none;
-  display: flex;
+  display: grid;
+  justify-content: start;
+  grid-template-columns: auto auto auto;
 }
 
 .modal-tag li {
