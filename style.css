@@ -771,9 +771,9 @@ aside {
 }
 
 .modal-hdr-btn div {
-  display: flex;
+  display: block;
   position: absolute;
-  bottom: 10px;
+  top: 760px;
 }
 
 .modal-hdr-btn div button {
@@ -833,9 +833,31 @@ aside {
 
 @media only screen and (min-width: 768px) {
   .modal {
-      max-height: 80%;
-      max-width: 80%;
-    }
+    max-height: 80%;
+    max-width: 80%;
+    width: unset;
+  }
+
+  .modal-header .close-button {
+    background: #EBECF0;
+    align-self: flex-end;
+    position: initial;
+
+  }
+
+  .modal-hdr-btn div {
+    display: flex;
+    align-items: flex-start;
+    position: initial;
+  }
+
+  .modal-hdr-btn div button {
+    width: 115px; 
+  }
+
+  .modal-tag {
+    display: flex;
+  }
   
   .hamburger {
     display: none;
@@ -1022,18 +1044,6 @@ aside {
   #contact-form form button {
     transition: all 0.5s ease-out;
   }
-
-  /* .card-item:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
-
-  .languages:hover,
-  .frameworks:hover,
-  .skills:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  } */
 
   #contact-form h3:hover {
     transform: translate(-1.1rem, -1ex);
