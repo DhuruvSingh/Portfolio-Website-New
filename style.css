@@ -830,8 +830,8 @@ aside {
 .error {
   display: none;
   width: 98%;
-  background: rgb(179, 54, 54) 30%;
-  color: #fff;
+  background: rgb(54 179 127) 30%;
+  color: rgb(251, 3, 3);
   border-radius: 4px;
   padding: 5px;
   border: 1px solid black;
