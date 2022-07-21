@@ -194,7 +194,6 @@ document.getElementById('work-container').innerHTML = `
 </div>
 <div class="card-item">
 <div class="text-box">
-<div class="text-box">
     <h4 class="project-title">${projects[3].title}</h4>
     <ul class="project-tag">
         <li>
@@ -241,7 +240,7 @@ document.getElementById('work-container').innerHTML = `
 <div class="text-box">
     <h4 class="project-title">${projects[5].title}</h4>
     <ul class="project-tag">
-        <li>
+         <li>
             <p>${projects[5].technologies[0]}</p>
         </li>
         <li>
