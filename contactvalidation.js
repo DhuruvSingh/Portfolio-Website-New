@@ -1,5 +1,4 @@
 const submitButton = document.getElementById('send-button');
-submitButton.addEventListener('click', formSubmit);
 
 function formSubmit(event) {
   const userName = document.getElementById('fullname').value;
@@ -18,3 +17,5 @@ function formSubmit(event) {
   }
   event.preventDefault();
 }
+
+submitButton.addEventListener('click', formSubmit);
