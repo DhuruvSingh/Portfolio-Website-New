@@ -1,15 +1,15 @@
 const menu = document.querySelector('.menu');
 const hamburger = document.querySelector('.hamburger');
-const closeIcon = document.querySelector('.closeIcon');
-const menuIcon = document.querySelector('.menuIcon');
+const closeIcon = document.querySelector('.closeicon');
+const menuIcon = document.querySelector('.menuicon');
 
 function toggleMenu() {
-  if (menu.classList.contains('showMenu')) {
-    menu.classList.remove('showMenu');
+  if (menu.classList.contains('showmenu')) {
+    menu.classList.remove('showmenu');
     closeIcon.style.display = 'none';
     menuIcon.style.display = 'block';
   } else {
-    menu.classList.add('showMenu');
+    menu.classList.add('showmenu');
     closeIcon.style.display = 'block';
     menuIcon.style.display = 'none';
   }
