@@ -735,6 +735,7 @@ aside {
   max-height: 96%;
   max-width: 90%;
   width: fit-content;
+  overflow-y: scroll;
 }
 
 .modal::-webkit-scrollbar {
@@ -845,7 +846,6 @@ aside {
     max-height: 80%;
     max-width: 80%;
     width: min-content;
-    overflow: unset;
   }
 
   .modal-header .close-button {
