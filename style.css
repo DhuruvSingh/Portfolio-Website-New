@@ -823,6 +823,23 @@ aside {
   grid-template-columns: auto auto auto;
 }
 
+.show-error {
+  display: block !important;
+}
+
+.error {
+  display: none;
+  width: 98%;
+  background: rgb(255, 107, 0) 30%;
+  color: #fff;
+  border-radius: 4px;
+  padding: 5px;
+  border: 1px solid black;
+  margin-top: 10px;
+  text-align: center;
+  font-weight: 500;
+}
+
 @media only screen and (min-width: 768px) {
   .modal {
     max-height: 80%;
