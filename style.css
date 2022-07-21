@@ -735,6 +735,7 @@ aside {
   max-height: 96%;
   max-width: 90%;
   width: fit-content;
+  overflow-y: scroll;
 }
 
 .modal::-webkit-scrollbar {
@@ -823,12 +824,28 @@ aside {
   grid-template-columns: auto auto auto;
 }
 
+.show-error {
+  display: block !important;
+}
+
+.error {
+  display: none;
+  width: 98%;
+  background: rgb(54 179 127) 30%;
+  color: rgb(251, 3, 3);
+  border-radius: 4px;
+  padding: 5px;
+  border: 1px solid black;
+  margin-top: 10px;
+  text-align: center;
+  font-weight: 500;
+}
+
 @media only screen and (min-width: 768px) {
   .modal {
     max-height: 80%;
     max-width: 80%;
     width: min-content;
-    overflow: unset;
   }
 
   .modal-header .close-button {
