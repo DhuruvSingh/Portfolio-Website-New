@@ -330,7 +330,7 @@ main {
   display: block;
   position: absolute;
   top: 760px;
-  left: 0px;
+  left: 0;
 }
 
 .about-me-text > button {
