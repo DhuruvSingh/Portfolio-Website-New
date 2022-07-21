@@ -1,8 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import "https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap";
 
 body {
   margin: 0;
-  font-family: "Poppins", sans-serif, "Crete Round", 'Inter';
+  font-family: Poppins, sans-serif, "Crete Round", Inter;
 }
 
 html {
@@ -11,8 +11,6 @@ html {
 
 body::-webkit-scrollbar {
   width: 16px;
-
-  /* width of the entire scrollbar */
 }
 
 body::-webkit-scrollbar-track {
@@ -23,19 +21,7 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb {
   background-color: #36b37e;
-
-  /* color of the scroll thumb */
   border-radius: 20px;
-
-  /* roundness of the scroll thumb */
-}
-
-body::-webkit-scrollbar-thumb:active {
-  background-color: #008552;
-}
-
-body::-webkit-scrollbar:hover {
-  width: 20px;
 }
 
 .navigation {
@@ -61,7 +47,7 @@ body::-webkit-scrollbar:hover {
 .logo > h3 {
   width: 90px;
   height: 28px;
-  font-family: 'Inter', sans-serif;
+  font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
@@ -101,7 +87,7 @@ footer div img {
 }
 
 .heading-text > h1 {
-  font-family: 'Inter', sans-serif;
+  font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -123,7 +109,7 @@ footer div img {
 
 .supporting-text > p {
   margin: 0;
-  font-family: 'Inter', sans-serif;
+  font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -170,6 +156,11 @@ footer div img {
   position: absolute;
 }
 
+.modal-header img {
+  max-width: 100%;
+  max-height: 616px;
+}
+
 .action-btn > a > img {
   height: 40px;
   width: 40px;
@@ -194,7 +185,7 @@ main {
 
 .text > h2 {
   color: #172b4d;
-  font-family: 'Inter', sans-serif;
+  font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -239,7 +230,7 @@ main {
 .project-title {
   width: 295px;
   height: 57px;
-  font-family: 'Inter', sans-serif;
+  font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
@@ -255,11 +246,20 @@ main {
   width: 305px;
   height: 32px;
   display: flex;
-  flex-direction: row;
+  flex-flow: wrap row;
   justify-content: space-between;
   align-items: center;
   margin: 0;
   padding: 0;
+  align-content: center;
+}
+
+.modal-body p {
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #344563;
 }
 
 .project-tag > li {
@@ -269,10 +269,11 @@ main {
   background: #ebf0ee;
   border-radius: 4px;
   list-style: none;
+  margin-top: 10px;
 }
 
 .about-me-text > p {
-  font-family: 'Inter', sans-serif;
+  font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -283,7 +284,7 @@ main {
 
 .project-tag > li > p {
   margin: 0;
-  font-family: 'Inter', sans-serif;
+  font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
@@ -309,7 +310,7 @@ main {
   height: 48px;
   background: #36b37f;
   border-radius: 4px;
-  font-family: 'Inter', sans-serif;
+  font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -324,6 +325,13 @@ main {
   height: 333px;
 }
 
+.modal-hdr-btn div {
+  display: block;
+  position: absolute;
+  top: 760px;
+  left: 0;
+}
+
 .about-me-text > button {
   background: #36b37f;
   border-radius: 4px;
@@ -332,15 +340,38 @@ main {
   border: none;
   letter-spacing: 0.03em;
   color: #fff;
-  font-family: 'Inter', sans-serif;
+  font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
 }
 
+.modal-hdr-btn div button {
+  margin-left: 12px;
+  width: 141px;
+  height: 48px;
+  background: #36b37e;
+  border-radius: 8px;
+  border: none;
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  color: #fff;
+}
+
 .project-btn-sec > button:active {
   background: #008552;
+}
+
+.about-me-text > button:active {
+  background: #008552;
+}
+
+.modal-hdr-btn div button:active {
+  background-color: #008552;
 }
 
 .about-me-illustration {
@@ -372,17 +403,13 @@ main {
 }
 
 .about-me-text > h3 {
-  font-family: 'Inter', sans-serif;
+  font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
   color: #172b4d;
   margin: 0;
-}
-
-.about-me-text > button:active {
-  background: #008552;
 }
 
 .about-me-card {
@@ -424,7 +451,7 @@ main {
 }
 
 .about-title-tag > h4 {
-  font-family: 'Inter', sans-serif;
+  font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
@@ -436,13 +463,12 @@ main {
 
 .about-title-tag > ul {
   display: flex;
-  flex-direction: row;
+  flex-flow: wrap row;
   align-items: center;
   padding: 0;
   gap: 8px;
   width: 271px;
   height: 88px;
-  flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -454,6 +480,20 @@ main {
   padding-bottom: 40px;
 }
 
+.modal-tag li {
+  margin-right: 8px;
+  margin-top: 15px;
+  background: #ebecf0;
+  border-radius: 8px;
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #344563;
+}
+
 .about-title-tag > ul > li {
   background: #fff;
   border-radius: 8px;
@@ -461,8 +501,12 @@ main {
   padding: 12px;
 }
 
+.modal-tag li p {
+  margin: 8px 12px;
+}
+
 .about-title-tag > ul > li > p {
-  font-family: 'Inter', sans-serif;
+  font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
@@ -632,7 +676,7 @@ aside {
   color: black;
 }
 
-.closeIcon {
+.closeicon {
   display: none;
 }
 
@@ -658,8 +702,8 @@ aside {
   padding-top: 60px;
 }
 
-.menuItem {
-  font-family: "Chivo", sans-serif;
+.menuitem {
+  font-family: Chivo, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -668,7 +712,7 @@ aside {
   color: #3a4a42;
 }
 
-.showMenu {
+.showmenu {
   transform: translateY(0);
 }
 
@@ -676,7 +720,140 @@ aside {
   color: #36b37e;
 }
 
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  bottom: -200%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border: 1px solid #ebecf0;
+  box-shadow: 0 48px 48px rgb(37 47 137 / 8%);
+  border-radius: 8px;
+  z-index: 101;
+  background-color: white;
+  max-height: 96%;
+  max-width: 90%;
+  width: fit-content;
+}
+
+.modal::-webkit-scrollbar {
+  width: 16px;
+}
+
+.modal::-webkit-scrollbar-thumb {
+  background-color: #36b37e;
+  border-radius: 20px;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header {
+  padding: 16px;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.modal-header .title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.modal-header .close-button {
+  cursor: pointer;
+  height: 26px;
+  width: 26px;
+  border: none;
+  border-radius: 8px;
+  background: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #67798e;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.modal-body {
+  padding: 10px 15px;
+}
+
+#overlay {
+  backdrop-filter: blur(8px);
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(0 0 0 / 50%);
+  pointer-events: none;
+  z-index: 100;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modal-hdr-btn {
+  display: flex;
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+}
+
+.modal-hdr-btn h4 {
+  margin: 0;
+}
+
+.modal-tag {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: grid;
+  justify-content: start;
+  grid-template-columns: auto auto auto;
+}
+
 @media only screen and (min-width: 768px) {
+  .modal {
+    max-height: 80%;
+    max-width: 80%;
+    width: min-content;
+    overflow: unset;
+  }
+
+  .modal-header .close-button {
+    background: #ebecf0;
+    align-self: flex-end;
+    position: initial;
+    overflow: unset;
+  }
+
+  .modal-hdr-btn div {
+    display: flex;
+    align-items: flex-start;
+    position: initial;
+  }
+
+  .project-btn-sec > button,
+  .about-me-text > button,
+  #contact-form form button {
+    transition: all 0.5s ease-out;
+  }
+
+  .modal-tag {
+    display: flex;
+  }
+
   .hamburger {
     display: none;
   }
@@ -855,24 +1032,6 @@ aside {
     position: absolute;
     top: 4244px;
     right: 0;
-  }
-
-  .project-btn-sec > button,
-  .about-me-text > button,
-  #contact-form form button {
-    transition: all 0.5s ease-out;
-  }
-
-  .card-item:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
-
-  .languages:hover,
-  .frameworks:hover,
-  .skills:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
   #contact-form h3:hover {
