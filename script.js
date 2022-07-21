@@ -18,44 +18,7 @@ function toggleMenu() {
 menu.addEventListener('click', toggleMenu);
 hamburger.addEventListener('click', toggleMenu);
 
-const openModalButtons = document.querySelectorAll('[data-modal-target]');
-const closeModalButtons = document.querySelectorAll('[data-close-button]');
-const overlay = document.getElementById('overlay');
-
-openModalButtons.forEach((button) => {
-  button.addEventListener('click', () => {
-    const modal = document.querySelector(button.dataset.modalTarget);
-    openModal(modal);
-  });
-});
-
-overlay.addEventListener('click', () => {
-  const modals = document.querySelectorAll('.modal.active');
-  modals.forEach((modal) => {
-    closeModal(modal);
-  });
-});
-
-closeModalButtons.forEach((button) => {
-  button.addEventListener('click', () => {
-    const modal = button.closest('.modal');
-    closeModal(modal);
-  });
-});
-
-function openModal(modal) {
-  if (modal == null) return;
-  modal.classList.add('active');
-  overlay.classList.add('active');
-}
-
-function closeModal(modal) {
-  if (modal == null) return;
-  modal.classList.remove('active');
-  overlay.classList.remove('active');
-}
-
-const projects = [
+var projects = [
   {
     title: 'Keeping track of hundreds of components',
     description:
@@ -118,6 +81,222 @@ const projects = [
     Source: 'https://dhuruvsingh.github.io/Portfolio-Website-New/',
   },
 ];
+
+document.getElementById('work-container').innerHTML = `
+<div class="card-item card-item-1">
+<div class="text-box">
+    <h4 class="project-title">${projects[0].title}</h4>
+    <ul class="project-tag" id="project-tag">
+        <li>
+            <p>${projects[0].technologies[0]}</p>
+        </li>
+        <li>
+            <p>${projects[0].technologies[1]}</p>
+        </li>
+        <li>
+            <p>${projects[0].technologies[2]}</p>
+        </li>
+        <li>
+            <p>${projects[0].technologies[3]}</p>
+        </li>
+        <li>
+            <p>${projects[0].technologies[4]}</p>
+        </li>
+        <li>
+            <p>${projects[0].technologies[5]}</p>
+        </li>
+    </ul>
+    <div class="project-btn-sec">
+        <button class="project-1"  data-modal-target="#modal" type="button">See Project</button>
+    </div>
+</div>
+<div class="modal" id="modal">
+    <div class="modal-header">
+        <img src="./icons/portfolio-snapshot-desktop.png" class="project-image-desktop" id="project-image-desktop" alt="Project image">
+        <button type="submit" data-close-button class="close-button">&times;</button>
+    </div>
+    <div class="modal-body">
+        <div class="modal-hdr-btn">
+            <h4 class="modal-title" id="modal-title">${projects[0].title}</h4>
+            <div id="modal-btns">
+                <button type="button">See Live <i class="fa-solid fa-up-right-from-square"></i></button>
+                <button type="button">See Source <i class="fa-brands fa-github"></i></button>
+            </div>
+        </div>
+        <ul class="modal-tag" id="modal-tag">
+          <li>
+              <p>${projects[0].technologies[0]}</p>
+          </li>
+          <li>
+              <p>${projects[0].technologies[1]}</p>
+          /li>
+          <li>
+              <p>${projects[0].technologies[2]}</p>
+          </li>
+          <li>
+              <p>${projects[0].technologies[3]}</p>
+          </li>
+          <li>
+              <p>${projects[0].technologies[4]}</p>
+          </li>
+          <li>
+              <p>${projects[0].technologies[5]}</p>
+          </li>
+        </ul>
+        <p id="modal-description">${projects[0].description}</p>
+    </div>
+</div>
+<div id="overlay"></div>
+</div>
+<div class="card-item">
+<div class="text-box">
+    <h4 class="project-title">${projects[1].title}</h4>
+    <ul class="project-tag">
+        <li>
+            <p>${projects[1].technologies[0]}</p>
+        </li>
+        <li>
+            <p>${projects[1].technologies[1]}</p>
+        </li>
+        <li>
+            <p>${projects[1].technologies[2]}</p>
+        </li>
+        <li>
+            <p>${projects[1].technologies[3]}</p>
+        </li>
+    </ul>
+    <div class="project-btn-sec">
+        <button class="project-2" data-modal-target="#modal" type="button">See Project</button>
+    </div>
+</div>
+</div>
+<div class="card-item">
+<div class="text-box">
+    <h4 class="project-title">${projects[2].title}</h4>
+    <ul class="project-tag">
+        <li>
+            <p>${projects[2].technologies[0]}</p>
+        </li>
+        <li>
+            <p>${projects[2].technologies[1]}</p>
+        </li>
+        <li>
+            <p>${projects[2].technologies[2]}</p>
+        </li>
+        <li>
+            <p>${projects[2].technologies[3]}</p>
+        </li>
+    </ul>
+    <div class="project-btn-sec">
+        <button class="project-3" data-modal-target="#modal" type="button">See Project</button>
+    </div>
+</div>
+</div>
+<div class="card-item">
+<div class="text-box">
+<div class="text-box">
+    <h4 class="project-title">${projects[3].title}</h4>
+    <ul class="project-tag">
+        <li>
+            <p>${projects[3].technologies[0]}</p>
+        </li>
+        <li>
+            <p>${projects[3].technologies[1]}</p>
+        </li>
+        <li>
+            <p>${projects[3].technologies[2]}</p>
+        </li>
+        <li>
+            <p>${projects[3].technologies[3]}</p>
+        </li>
+    </ul>
+    <div class="project-btn-sec">
+        <button class="project-4" data-modal-target="#modal" type="button">See Project</button>
+    </div>
+</div>
+</div>
+<div class="card-item">
+<div class="text-box">
+    <h4 class="project-title">${projects[4].title}</h4>
+    <ul class="project-tag">
+        <li>
+            <p>${projects[4].technologies[0]}</p>
+        </li>
+        <li>
+            <p>${projects[4].technologies[1]}</p>
+        </li>
+        <li>
+            <p>${projects[4].technologies[2]}</p>
+        </li>
+        <li>
+            <p>${projects[4].technologies[3]}</p>
+        </li>
+    </ul>
+    <div class="project-btn-sec">
+        <button class="project-5" data-modal-target="#modal" type="button">See Project</button>
+    </div>
+</div>
+</div>
+<div class="card-item">
+<div class="text-box">
+    <h4 class="project-title">${projects[5].title}</h4>
+    <ul class="project-tag">
+        <li>
+            <p>${projects[5].technologies[0]}</p>
+        </li>
+        <li>
+            <p>${projects[5].technologies[1]}</p>
+        </li>
+        <li>
+            <p>${projects[5].technologies[2]}</p>
+        </li>
+        <li>
+            <p>${projects[5].technologies[3]}</p>
+        </li>
+    </ul>
+    <div class="project-btn-sec">
+        <button class="project-6" data-modal-target="#modal" type="button">See Project</button>
+    </div>
+</div>
+</div>
+`;
+
+const openModalButtons = document.querySelectorAll('[data-modal-target]');
+const closeModalButtons = document.querySelectorAll('[data-close-button]');
+const overlay = document.getElementById('overlay');
+
+openModalButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    const modal = document.querySelector(button.dataset.modalTarget);
+    openModal(modal);
+  });
+});
+
+overlay.addEventListener('click', () => {
+  const modals = document.querySelectorAll('.modal.active');
+  modals.forEach((modal) => {
+    closeModal(modal);
+  });
+});
+
+closeModalButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    const modal = button.closest('.modal');
+    closeModal(modal);
+  });
+});
+
+function openModal(modal) {
+  if (modal == null) return;
+  modal.classList.add('active');
+  overlay.classList.add('active');
+}
+
+function closeModal(modal) {
+  if (modal == null) return;
+  modal.classList.remove('active');
+  overlay.classList.remove('active');
+}
 
 openModalButtons.forEach((button) => {
   button.addEventListener('click', (event) => {

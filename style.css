@@ -251,6 +251,8 @@ main {
   align-items: center;
   margin: 0;
   padding: 0;
+  flex-wrap: wrap;
+  align-content: center;
 }
 
 .modal-body p {
@@ -268,6 +270,7 @@ main {
   background: #ebf0ee;
   border-radius: 4px;
   list-style: none;
+  margin-top: 10px;
 }
 
 .about-me-text > p {
@@ -327,6 +330,7 @@ main {
   display: block;
   position: absolute;
   top: 760px;
+  left: 0px;
 }
 
 .about-me-text > button {
@@ -732,7 +736,6 @@ aside {
   background-color: white;
   max-height: 96%;
   max-width: 90%;
-  overflow-y: scroll;
   width: fit-content;
 }
 
@@ -750,7 +753,7 @@ aside {
 }
 
 .modal-header {
-  padding: 10px 15px;
+  padding: 16px 16px;
   display: flex;
   flex-direction: column-reverse;
 }
@@ -826,13 +829,15 @@ aside {
   .modal {
     max-height: 80%;
     max-width: 80%;
-    width: unset;
+    width: min-content;
+    overflow: unset;
   }
 
   .modal-header .close-button {
     background: #ebecf0;
     align-self: flex-end;
     position: initial;
+    overflow: unset;
   }
 
   .modal-hdr-btn div {
