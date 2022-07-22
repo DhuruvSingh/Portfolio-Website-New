@@ -7,3 +7,11 @@ if (window.localStorage.getItem('data')) {
   contactForm.email.value = parsedData.email;
   contactForm.message.value = parsedData.message;
 }
+
+function collectFormData() {
+  formDetails.name = contactForm.name.value;
+  formDetails.email = contactForm.email.value;
+  formDetails.message = contactForm.message.value;
+  window.localStorage.setItem('data', JSON.stringify(formDetails));
+}
+contactForm.addEventListener('change', collectFormData);
