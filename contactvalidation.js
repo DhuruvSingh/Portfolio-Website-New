@@ -7,6 +7,7 @@ function formSubmit(event) {
   if (email !== email.toLowerCase()) {
     document.getElementById('error').classList.add('show-error');
   } else {
+    event.preventDefault();
     const userData = JSON.stringify({
       userName,
       email,
@@ -15,7 +16,6 @@ function formSubmit(event) {
     window.localStorage.setItem('userData', userData);
     document.getElementById('contact').reset();
   }
-  event.preventDefault();
 }
 
 submitButton.addEventListener('click', formSubmit);
