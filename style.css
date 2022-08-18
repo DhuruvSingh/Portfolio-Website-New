@@ -841,6 +841,13 @@ aside {
   font-weight: 500;
 }
 
+.projectcardss {
+  display: contents;
+}
+.card-item-1-img, .card-item-0-img {
+  height: -webkit-fill-available;
+}
+
 @media only screen and (min-width: 768px) {
   .modal {
     max-height: 80%;

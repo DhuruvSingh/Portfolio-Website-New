@@ -20,29 +20,28 @@ hamburger.addEventListener('click', toggleMenu);
 
 const projects = [
   {
-    title: 'Keeping track of hundreds of components',
+    title: 'Hackathon Web Page',
     description:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
-    image: './icons/portfolio-snapshot-desktop.png',
+      'This is a page of Hackathon whare competative programmer can code and grab a exciting prizes. Made with love :- HTML/CSS & JavaScript capstone project - Hackathon page',
+    image: 'https://user-images.githubusercontent.com/84073153/185250275-e2655244-bd00-41cc-a99e-9be24d84cb28.png',
     technologies: [
-      'Codekit',
-      'GitHub',
+      'CSS',
+      'HTML',
       'JavaScript',
-      'Bootstrap',
-      'Terminal',
-      'Codepen',
+      'ESLint',
+      'Stylint',
     ],
-    See_Live: 'https://dhuruvsingh.github.io/Portfolio-Website-New/',
-    Source: 'https://dhuruvsingh.github.io/Portfolio-Website-New/',
+    See_Live: 'https://dhuruvsingh.github.io/Hackathon-web-page/',
+    Source: 'https://github.com/DhuruvSingh/Hackathon-web-page',
   },
   {
-    title: 'Multi-Post Stories Gain+Glory',
+    title: 'Awesome Books',
     description:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
-    image: './icons/portfolio-snapshot-desktop.png',
-    technologies: ['Ruby on rails', 'css', 'JavaScript', 'html'],
-    See_Live: 'https://dhuruvsingh.github.io/Portfolio-Website-New/',
-    Source: 'https://dhuruvsingh.github.io/Portfolio-Website-New/',
+      'In this project, you can add books and remove from your Awesome books app. The goal is to make it more organized by using modules. You will also practice the ES6 syntax that you have learned.',
+    image: './icons/portfolio-snapshot-desktop.pnghttps://github.com/Obote/Awsome-book/raw/master/other-files/booklist.png',
+    technologies: ['HTML', 'CSS', 'JavaScript', 'ES6', 'ESLint', 'Stylint'],
+    See_Live: 'https://obote.github.io/Awsome-book/',
+    Source: 'https://github.com/Obote/Awsome-book',
   },
   {
     title: 'Multi-Post Stories Gain+Glory',
@@ -84,6 +83,7 @@ const projects = [
 
 document.getElementById('work-container').innerHTML = `
 <div class="card-item card-item-1">
+  <img class="card-item-0-img" src="./desktop-version-files/hackathon-screenshot.png">
 <div class="text-box">
     <h4 class="project-title">${projects[0].title}</h4>
     <ul class="project-tag" id="project-tag">
@@ -102,9 +102,6 @@ document.getElementById('work-container').innerHTML = `
         <li>
             <p>${projects[0].technologies[4]}</p>
         </li>
-        <li>
-            <p>${projects[0].technologies[5]}</p>
-        </li>
     </ul>
     <div class="project-btn-sec">
         <button class="project-1"  data-modal-target="#modal" type="button">See Project</button>
@@ -112,7 +109,7 @@ document.getElementById('work-container').innerHTML = `
 </div>
 <div class="modal" id="modal">
     <div class="modal-header">
-        <img src="./icons/portfolio-snapshot-desktop.png" class="project-image-desktop" id="project-image-desktop" alt="Project image">
+        <img src="${projects[0].image}" class="project-image-desktop" id="project-image-desktop" alt="Project image">
         <button type="submit" data-close-button class="close-button">&times;</button>
     </div>
     <div class="modal-body">
@@ -139,9 +136,6 @@ document.getElementById('work-container').innerHTML = `
           <li>
               <p>${projects[0].technologies[4]}</p>
           </li>
-          <li>
-              <p>${projects[0].technologies[5]}</p>
-          </li>
         </ul>
         <p id="modal-description">${projects[0].description}</p>
     </div>
@@ -149,6 +143,7 @@ document.getElementById('work-container').innerHTML = `
 <div id="overlay"></div>
 </div>
 <div class="card-item">
+  <img class="card-item-1-img" src="https://github.com/Obote/Awsome-book/raw/master/other-files/booklist.png">
 <div class="text-box">
     <h4 class="project-title">${projects[1].title}</h4>
     <ul class="project-tag">
@@ -171,6 +166,9 @@ document.getElementById('work-container').innerHTML = `
 </div>
 </div>
 <div class="card-item">
+<div class="projectcardss">
+  <img src="./desktop-version-files/hackathon-screenshot.png">
+</div>
 <div class="text-box">
     <h4 class="project-title">${projects[2].title}</h4>
     <ul class="project-tag">
@@ -193,6 +191,9 @@ document.getElementById('work-container').innerHTML = `
 </div>
 </div>
 <div class="card-item">
+<div class="projectcardss">
+  <img src="./desktop-version-files/hackathon-screenshot.png">
+</div>
 <div class="text-box">
     <h4 class="project-title">${projects[3].title}</h4>
     <ul class="project-tag">
@@ -215,6 +216,9 @@ document.getElementById('work-container').innerHTML = `
 </div>
 </div>
 <div class="card-item">
+<div class="projectcardss">
+  <img src="./desktop-version-files/hackathon-screenshot.png">
+</div>
 <div class="text-box">
     <h4 class="project-title">${projects[4].title}</h4>
     <ul class="project-tag">
@@ -237,6 +241,9 @@ document.getElementById('work-container').innerHTML = `
 </div>
 </div>
 <div class="card-item">
+<div class="projectcardss">
+  <img src="./desktop-version-files/hackathon-screenshot.png">
+</div>
 <div class="text-box">
     <h4 class="project-title">${projects[5].title}</h4>
     <ul class="project-tag">
